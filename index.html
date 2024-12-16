@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alejo Nicolás Peralta Falconi - Portafolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <style>
     body {
       font-family: 'Roboto', sans-serif;
@@ -12,6 +13,7 @@
       padding: 0;
       background: #f5f5f5;
       color: #333;
+      overflow-x: hidden; /* Evita scroll horizontal por animaciones */
     }
 
     header {
@@ -21,6 +23,7 @@
       padding: 2rem;
       border-radius: 10px;
       margin: 1rem;
+      animation: fadeInDown 1s;
     }
 
     nav {
@@ -29,6 +32,7 @@
       padding: 1rem;
       border-radius: 10px;
       margin: 1rem;
+      animation: fadeIn 1.5s;
     }
 
     nav a {
@@ -36,6 +40,7 @@
       text-decoration: none;
       margin: 0 1rem;
       font-weight: bold;
+      transition: color 0.3s ease; /* Efecto suave al pasar el mouse */
     }
 
     nav a:hover {
@@ -49,6 +54,7 @@
       background: white;
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1.5s;
     }
 
     footer {
@@ -58,6 +64,7 @@
       color: white;
       border-radius: 10px;
       margin: 1rem;
+      animation: fadeInUp 1.5s;
     }
 
     .social-media a {
@@ -66,53 +73,78 @@
       margin: 0 1rem;
       font-size: 1.2rem;
       font-weight: bold;
+      transition: color 0.3s ease; /* Efecto suave al pasar el mouse */
     }
 
     .social-media a:hover {
       color: #2196f3;
     }
+
+    /* Animación de las habilidades */
+    .skills-list li {
+      animation: slideInLeft 1s;
+    }
+
+    /* Keyframes personalizados */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
   </style>
 </head>
 <body>
 
-  <header>
+  <header class="animate__animated animate__fadeInDown">
     <h1>Alejo Nicolás Peralta Falconi</h1>
     <p>📊 Análisis de Datos | 🖥️ Excel | 🛠️ SQL | 📈 Power BI | 🐍 Python</p>
   </header>
 
-  <nav>
+  <nav class="animate__animated animate__fadeIn">
     <a href="#about">Sobre mí</a>
     <a href="#skills">Habilidades</a>
     <a href="#projects">Proyectos</a>
     <a href="#contact">Contacto</a>
   </nav>
 
-  <section id="about">
+  <section id="about" class="animate__animated animate__fadeInUp">
     <h2>Sobre mí</h2>
     <p>
       👋 ¡Hola! Soy Alejo Nicolás Peralta Falconi, Analista de Datos – Transformando Información en Ventaja Competitiva con Inteligencia Artificial 🤖.
       Mi compromiso es proporcionar insights accionables y diseñar sistemas inteligentes que impulsen el rendimiento y el crecimiento de las empresas.
-      🌟 ¿Qué hago? Ayudo a empresas a aprovechar al máximo su potencial de datos, combinando análisis avanzado con el poder de Machine Learning y herramientas de vanguardia como: 
-      💻 Python, 🛠️ SQL, 📊 Power BI, 📊 Tableau, entre otras. 
-      Mi experiencia incluye la creación de modelos predictivos y la implementación de soluciones personalizadas que: ✅ Optimizan procesos. ✅ Generan predicciones precisas. ✅ Respaldan decisiones estratégicas basadas en evidencia.
-
-💡 Mi compromiso: Proporcionar insights accionables y diseñar sistemas inteligentes que impulsen el rendimiento y el crecimiento de las empresas.
-
-🚀 Proyectos Destacados 🔮 Modelos Predictivos:
-
-Implementé algoritmos de Machine Learning (regresión, clasificación, clustering) para predecir tendencias clave, mejorar estrategias de negocio y optimizar recursos. 📊 Dashboards Estratégicos:
-
-Diseñé tableros interactivos en Power BI que integran datos operativos en tiempo real, respaldando decisiones críticas. 🤖 Automatización de Procesos:
-
-Creé scripts en Python que redujeron significativamente tiempos operativos y mejoraron la eficiencia. ✨ ¿Qué me diferencia? 🌐 Machine Learning Aplicado: Desarrollo modelos para predicción, 
-      clasificación y análisis de datos no estructurados. 
-      📊 Visión Estratégica: Transformo datos complejos en información clara y accionable. 📈 Resultados Medibles: Me enfoco en resolver problemas reales con soluciones basadas en datos e inteligencia artificial.
     </p>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="animate__animated animate__fadeInUp">
     <h2>Habilidades</h2>
-    <ul>
+    <ul class="skills-list">
       <li>💻 Python</li>
       <li>🛠️ SQL</li>
       <li>📊 Power BI</li>
@@ -121,7 +153,7 @@ Creé scripts en Python que redujeron significativamente tiempos operativos y me
     </ul>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="animate__animated animate__fadeInUp">
     <h2>Proyectos</h2>
     <ul>
       <li>
@@ -130,7 +162,7 @@ Creé scripts en Python que redujeron significativamente tiempos operativos y me
     </ul>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="animate__animated animate__fadeInUp">
     <h2>Contacto</h2>
     <p>📬 Correo electrónico: alejoperaltafal@gmail.com</p>
     <div class="social-media">
@@ -139,11 +171,9 @@ Creé scripts en Python que redujeron significativamente tiempos operativos y me
     </div>
   </section>
 
-  <footer>
+  <footer class="animate__animated animate__fadeInUp">
     <p>© 2024 Alejo Nicolás Peralta Falconi. Todos los derechos reservados.</p>
   </footer>
 
 </body>
 </html>
-
-
