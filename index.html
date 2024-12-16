@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alejo Nicolás Peralta Falconi - Portafolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <style>
     body {
       font-family: 'Roboto', sans-serif;
@@ -13,72 +13,23 @@
       padding: 0;
       background: #f5f5f5;
       color: #333;
-      overflow-x: hidden;
     }
 
-    section {
-      padding: 5rem 1rem;
-      background: white;
-      margin: 1rem 0;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      animation: fadeIn 2s;
-    }
-
-    /* Estilo de la portada */
-    .hero {
+    header {
       background: linear-gradient(to right, #4caf50, #2196f3);
       color: white;
       text-align: center;
-      padding: 10rem 1rem;
-      position: relative;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      animation: fadeInDown 2s;
+      padding: 2rem;
+      border-radius: 10px;
+      margin: 1rem;
     }
 
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      animation: fadeIn 1.5s;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-      animation: fadeIn 1.5s;
-    }
-
-    .hero-buttons {
-      display: flex;
-      gap: 1.5rem;
-      animation: fadeInUp 2s;
-    }
-
-    .hero-buttons a {
-      padding: 1rem 2rem;
-      background-color: #4caf50;
-      color: white;
-      font-size: 1.1rem;
-      text-decoration: none;
-      border-radius: 25px;
-      transition: background-color 0.3s ease;
-    }
-
-    .hero-buttons a:hover {
-      background-color: #2196f3;
-    }
-
-    /* Estilos generales para la navegación */
     nav {
       text-align: center;
       background: #333;
       padding: 1rem;
       border-radius: 10px;
-      margin-top: 1rem;
+      margin: 1rem;
     }
 
     nav a {
@@ -93,72 +44,108 @@
       text-decoration: underline;
     }
 
-    .button-back {
-      background-color: #4caf50;
-      color: white;
-      padding: 0.8rem 1.5rem;
-      border-radius: 25px;
-      text-decoration: none;
+    section {
+      margin: 1rem;
+      padding: 1rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
       text-align: center;
-      margin-top: 2rem;
+      padding: 1rem;
+      background: #333;
+      color: white;
+      border-radius: 10px;
+      margin: 1rem;
+    }
+
+    .social-media a {
+      color: #4caf50;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .social-media a:hover {
+      color: #2196f3;
+    }
+
+    .button-back {
       display: inline-block;
+      background: #2196f3;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 1rem;
     }
 
     .button-back:hover {
-      background-color: #2196f3;
+      background: #4caf50;
     }
 
-    /* Animaciones */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
+    .project-title {
+      color: #2196f3;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      display: inline-block;
+      transition: all 0.3s ease-in-out;
     }
 
-    @keyframes fadeInDown {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .project-title:hover {
+      color: #4caf50;
+      transform: translateX(5px);
+    }
+
+    h2, p {
+      animation: fadeInUp 1s ease-out;
     }
 
     @keyframes fadeInUp {
-      from {
+      0% {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(30px);
       }
-      to {
+      100% {
         opacity: 1;
         transform: translateY(0);
       }
+    }
+
+    #proyectos ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #proyectos ul li {
+      margin: 1rem 0;
     }
   </style>
 </head>
 <body>
 
-  <!-- Portada Principal -->
-  <section id="portada" class="hero">
-    <h1 class="animate__animated animate__fadeIn">Alejo Nicolás Peralta Falconi</h1>
-    <p class="animate__animated animate__fadeIn">📊 Análisis de Datos | 🖥️ Excel | 🛠️ SQL | 📈 Power BI | 🐍 Python</p>
-    <div class="hero-buttons animate__animated animate__fadeInUp">
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
-    </div>
-  </section>
+  <header>
+    <h1>Alejo Nicolás Peralta Falconi</h1>
+    <p>📊 Análisis de Datos | 🖥️ Excel | 🛠️ SQL | 📈 Power BI | 🐍 Python</p>
+  </header>
 
-  <!-- Sección "Sobre mí" -->
+  <nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
   <section id="sobre-mi">
-    <h2 class="animate__animated animate__fadeInUp">Sobre mí</h2>
-    <p class="animate__animated animate__fadeInUp"> 👋 ¡Hola! Soy Alejo Nicolás Peralta Falconi, Analista de Datos – Transformando Información en Ventaja Competitiva con Inteligencia Artificial 🤖.
+    <h2>Sobre mí</h2>
+     <p>
+      👋 ¡Hola! Soy Alejo Nicolás Peralta Falconi, Analista de Datos – Transformando Información en Ventaja Competitiva con Inteligencia Artificial 🤖.
       Mi compromiso es proporcionar insights accionables y diseñar sistemas inteligentes que impulsen el rendimiento y el crecimiento de las empresas.
       🌟 ¿Qué hago? Ayudo a empresas a aprovechar al máximo su potencial de datos, combinando análisis avanzado con el poder de Machine Learning y herramientas de vanguardia como: 
       💻 Python, 🛠️ SQL, 📊 Power BI, 📊 Tableau, entre otras. 
@@ -174,48 +161,47 @@ Diseñé tableros interactivos en Power BI que integran datos operativos en tiem
 
 Creé scripts en Python que redujeron significativamente tiempos operativos y mejoraron la eficiencia. ✨ ¿Qué me diferencia? 🌐 Machine Learning Aplicado: Desarrollo modelos para predicción, 
       clasificación y análisis de datos no estructurados. 
-      📊 Visión Estratégica: Transformo datos complejos en información clara y accionable. 📈 Resultados Medibles: Me enfoco en resolver problemas reales con soluciones basadas en datos e inteligencia artificial.</p>
-    <a href="#portada" class="button-back">Volver a la Portada</a>
+      📊 Visión Estratégica: Transformo datos complejos en información clara y accionable. 📈 Resultados Medibles: Me enfoco en resolver problemas reales con soluciones basadas en datos e inteligencia artificial.
+    </p>
   </section>
 
-  <!-- Sección "Habilidades" -->
   <section id="habilidades">
-    <h2 class="animate__animated animate__fadeInUp">Habilidades</h2>
-    <ul class="animate__animated animate__fadeInUp">
+    <h2>Habilidades</h2>
+    <ul>
       <li>💻 Python</li>
       <li>🛠️ SQL</li>
       <li>📊 Power BI</li>
       <li>📊 Excel</li>
       <li>📊 Tableau</li>
     </ul>
-    <a href="#portada" class="button-back">Volver a la Portada</a>
   </section>
 
-  <!-- Sección "Proyectos" -->
   <section id="proyectos">
     <h2 class="animate__animated animate__fadeInUp">Proyectos</h2>
     <ul class="animate__animated animate__fadeInUp">
-      <li>📈 Análisis de datos de COVID-19 y vacunación</li>
-      <li>🏀 Análisis de equipos campeones de la NBA</li>
-      <li>💻 Dashboard de análisis de ventas</li>
+      <li><a href="https://github.com/APPeralta05/Python_Udemy" class="project-title" target="_blank">🔗 Python Udemy</a></li>
+      <li><a href="https://github.com/APPeralta05/Henry-M2" class="project-title" target="_blank">🔗 Henry M2</a></li>
+      <li><a href="https://github.com/APPeralta05/Henry-M3" class="project-title" target="_blank">🔗 Henry M3</a></li>
+      <li><a href="https://github.com/APPeralta05/Henry-M4" class="project-title" target="_blank">🔗 Henry M4</a></li>
+      <li><a href="https://github.com/APPeralta05/Henry-M1" class="project-title" target="_blank">🔗 Henry M1</a></li>
+      <li><a href="https://github.com/APPeralta05/Codigo_Campeon_Revelando_la_Formula_del_exito_en_la_NBA" class="project-title" target="_blank">🔗 Código Campeón - NBA</a></li>
+      <li><a href="https://github.com/APPeralta05?tab=repositories" class="project-title" target="_blank">🔗 Repositorios Generales</a></li>
     </ul>
     <a href="#portada" class="button-back">Volver a la Portada</a>
   </section>
 
-  <!-- Sección "Contacto" -->
   <section id="contacto">
-    <h2 class="animate__animated animate__fadeInUp">Contacto</h2>
-    <p class="animate__animated animate__fadeInUp">📧 Email: alejo@example.com</p>
-    <p class="animate__animated animate__fadeInUp">🔗 LinkedIn: linkedin.com/in/alejo-peralta</p>
-    <a href="#portada" class="button-back">Volver a la Portada</a>
+    <h2>Contacto</h2>
+    <p>📬 Correo electrónico: alejoperaltafal@gmail.com</p>
+    <div class="social-media">
+      <a href="https://github.com/APPeralta05" target="_blank">🐙 GitHub</a>
+      <a href="https://linkedin.com/in/alejo-peralta-falconi-980762187/" target="_blank">🔗 LinkedIn</a>
+    </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>© 2024 Alejo Nicolás Peralta Falconi. Todos los derechos reservados.</p>
   </footer>
 
 </body>
 </html>
-
-
