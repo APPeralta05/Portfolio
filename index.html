@@ -1,164 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alejo Nicolás Peralta Falconi - Portafolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(to right, #4CAF50, #2196F3);
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        header p {
-            font-size: 1.2rem;
-        }
-        nav {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 0.5rem 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 2rem;
-        }
-        .skills, .projects {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        .skill, .project {
-            flex: 1 1 calc(50% - 2rem);
-            background: #f4f4f4;
-            padding: 1rem;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .skill h3, .project h3 {
-            margin-top: 0;
-        }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .contact {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-        .contact a {
-            color: #4CAF50;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .contact a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alejo Nicolás Peralta Falconi - Portafolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #4caf50, #2196f3);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      border-radius: 10px;
+      margin: 1rem;
+    }
+
+    nav {
+      text-align: center;
+      background: #333;
+      padding: 1rem;
+      border-radius: 10px;
+      margin: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #4caf50;
+      text-decoration: underline;
+    }
+
+    section {
+      margin: 1rem;
+      padding: 1rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: white;
+      border-radius: 10px;
+      margin: 1rem;
+    }
+
+    .social-media a {
+      color: #4caf50;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .social-media a:hover {
+      color: #2196f3;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Alejo Nicolás Peralta Falconi</h1>
-        <p>📊 Análisis de Datos | 🖥️ Excel | 🛠️ SQL | 📈 Power BI | 🐍 Python</p>
-    </header>
-    <nav>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#skills">Habilidades</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-    <section id="sobre-mi">
-        <h2>👋 ¡Hola!</h2>
-        <p>
-            Soy Alejo Nicolás Peralta Falconi, Analista de Datos – Transformando Información en Ventaja Competitiva con Inteligencia Artificial 🤖.
-        </p>
-        <p>
-            🌟 <strong>¿Qué hago?</strong> Ayudo a empresas a aprovechar al máximo su potencial de datos, combinando análisis avanzado con el poder de Machine Learning y herramientas de vanguardia como: 💻 Python, 🛠️ SQL, 📊 Power BI, 📊 Tableau, entre otras. 
-            Mi experiencia incluye la creación de modelos predictivos y la implementación de soluciones personalizadas que:  
-        </p>
-        <ul>
-            <li>✅ Optimizan procesos.</li>
-            <li>✅ Generan predicciones precisas.</li>
-            <li>✅ Respaldan decisiones estratégicas basadas en evidencia.</li>
-        </ul>
-    </section>
-    <section id="skills">
-        <h2>✨ Habilidades</h2>
-        <div class="skills">
-            <div class="skill">
-                <h3>🌐 Machine Learning Aplicado</h3>
-                <p>Desarrollo modelos para predicción, clasificación y análisis de datos no estructurados.</p>
-            </div>
-            <div class="skill">
-                <h3>📊 Visión Estratégica</h3>
-                <p>Transformo datos complejos en información clara y accionable.</p>
-            </div>
-            <div class="skill">
-                <h3>📈 Resultados Medibles</h3>
-                <p>Me enfoco en resolver problemas reales con soluciones basadas en datos e inteligencia artificial.</p>
-            </div>
-        </div>
-    </section>
-    <section id="proyectos">
-        <h2>🚀 Proyectos Destacados</h2>
-        <div class="projects">
-            <div class="project">
-                <h3>🔮 Modelos Predictivos</h3>
-                <p>Implementé algoritmos de Machine Learning para predecir tendencias clave, mejorar estrategias de negocio y optimizar recursos.</p>
-            </div>
-            <div class="project">
-                <h3>📊 Dashboards Estratégicos</h3>
-                <p>Diseñé tableros interactivos en Power BI que integran datos operativos en tiempo real, respaldando decisiones críticas.</p>
-            </div>
-            <div class="project">
-                <h3>🤖 Automatización de Procesos</h3>
-                <p>Creé scripts en Python que redujeron significativamente tiempos operativos y mejoraron la eficiencia.</p>
-            </div>
-            <div class="project">
-                <h3>📂 Repositorios en GitHub</h3>
-                <p>
-                    Descubre más proyectos en mi perfil de GitHub: 
-                    <a href="https://github.com/APPeralta05?tab=repositories" target="_blank">Ver todos los repositorios</a>.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section id="contacto">
-        <h2>📬 Contacto</h2>
-        <div class="contact">
-            <a href="mailto:alejoperaltafal@gmail.com">✉️ Correo: alejoperaltafal@gmail.com</a>
-            <a href="https://linkedin.com/in/alejonicolasperaltafalconi" target="_blank">🔗 LinkedIn</a>
-            <a href="https://github.com/APPeralta05" target="_blank">🐙 GitHub</a>
-        </div>
-    </section>
-    <footer>
-        <p>© 2024 Alejo Nicolás Peralta Falconi. Todos los derechos reservados.</p>
-    </footer>
+
+  <header>
+    <h1>Alejo Nicolás Peralta Falconi</h1>
+    <p>📊 Análisis de Datos | 🖥️ Excel | 🛠️ SQL | 📈 Power BI | 🐍 Python</p>
+  </header>
+
+  <nav>
+    <a href="#about">Sobre mí</a>
+    <a href="#skills">Habilidades</a>
+    <a href="#projects">Proyectos</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+
+  <section id="about">
+    <h2>Sobre mí</h2>
+    <p>
+      👋 ¡Hola! Soy Alejo Nicolás Peralta Falconi, Analista de Datos – Transformando Información en Ventaja Competitiva con Inteligencia Artificial 🤖.
+      Mi compromiso es proporcionar insights accionables y diseñar sistemas inteligentes que impulsen el rendimiento y el crecimiento de las empresas.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>💻 Python</li>
+      <li>🛠️ SQL</li>
+      <li>📊 Power BI</li>
+      <li>📊 Tableau</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Proyectos</h2>
+    <ul>
+      <li>
+        <a href="https://github.com/APPeralta05?tab=repositories" target="_blank">Repositorio de Proyectos en GitHub</a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p>📬 Correo electrónico: alejoperaltafal@gmail.com</p>
+    <div class="social-media">
+      <a href="https://github.com/APPeralta05" target="_blank">🐙 GitHub</a>
+      <a href="https://linkedin.com/in/alejo-peralta-falconi-980762187/" target="_blank">🔗 LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 Alejo Nicolás Peralta Falconi. Todos los derechos reservados.</p>
+  </footer>
+
 </body>
 </html>
+
 
