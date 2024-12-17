@@ -11,12 +11,12 @@
       font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom right, #2c2c2c, #6c6c6c);
+      background: linear-gradient(to bottom right, #2e2e2e, #666);
       color: #f5f5f5;
     }
 
     header {
-      background: linear-gradient(to right, #444, #666);
+      background: linear-gradient(to right, #3a3a3a, #555);
       color: white;
       text-align: center;
       padding: 2rem;
@@ -27,7 +27,7 @@
 
     nav {
       text-align: center;
-      background: #333;
+      background: #444;
       padding: 1rem;
       border-radius: 10px;
       margin: 1rem;
@@ -42,14 +42,14 @@
     }
 
     nav a:hover {
-      color: #4caf50;
+      color: #bbbbbb;
       text-decoration: underline;
     }
 
     section {
       margin: 1rem;
       padding: 1rem;
-      background: #444;
+      background: #3a3a3a;
       color: #f5f5f5;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -59,27 +59,15 @@
     footer {
       text-align: center;
       padding: 1rem;
-      background: #333;
+      background: #444;
       color: #f5f5f5;
       border-radius: 10px;
       margin: 1rem;
     }
 
-    .social-media a {
-      color: #4caf50;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
-
-    .social-media a:hover {
-      color: #2196f3;
-    }
-
     .button-back {
       display: inline-block;
-      background: #4caf50;
+      background: #555;
       color: white;
       padding: 0.5rem 1rem;
       text-decoration: none;
@@ -90,12 +78,13 @@
     }
 
     .button-back:hover {
-      background: #2196f3;
+      background: #bbb;
+      color: #333;
       transform: scale(1.1);
     }
 
     .project-title {
-      color: #4caf50;
+      color: #bbb;
       text-decoration: none;
       font-size: 1.2rem;
       font-weight: bold;
@@ -105,36 +94,14 @@
     }
 
     .project-title:hover {
-      color: #2196f3;
+      color: white;
       transform: translateX(5px);
-    }
-
-    @keyframes fadeInDown {
-      0% {
-        opacity: 0;
-        transform: translateY(-50px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes slideInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(50px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
 
     #portada {
       text-align: center;
       padding: 5rem 2rem;
-      background: linear-gradient(to right, #2c2c2c, #444);
+      background: linear-gradient(to right, #2e2e2e, #555);
       color: white;
       border-radius: 10px;
       margin: 1rem;
@@ -159,24 +126,26 @@
       object-fit: cover;
       border: 4px solid #fff;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-      animation: fadeInUp 2s ease-out;
     }
 
-    /* Animación adicional de pulse */
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideInUp {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
     @keyframes pulse {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.05);
-      }
-      100% {
-        transform: scale(1);
-      }
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
     }
   </style>
 </head>
 <body>
+  <!-- Portada -->
   <div id="portada">
     <header>
       <h1 class="animate__animated animate__fadeInDown">Alejo Nicolás Peralta Falconi</h1>
@@ -187,10 +156,11 @@
       <a href="#contacto" class="button-back">Contacto</a>
     </header>
     <div class="foto-perfil">
-      <img src="https://github.com/APPeralta05/Portfolio/blob/main/Alejo.jpg?raw=true" alt="Alejo Nicolás Peralta Falconi" class="foto-redonda">
+      <img src="https://github.com/APPeralta05/Portfolio/blob/main/Alejo.jpg?raw=true" alt="Foto de Alejo" class="foto-redonda">
     </div>
   </div>
 
+  <!-- Navegación -->
   <nav>
     <a href="#portada">Portada</a>
     <a href="#sobre-mi">Sobre mí</a>
@@ -199,6 +169,7 @@
     <a href="#contacto">Contacto</a>
   </nav>
 
+  <!-- Secciones -->
   <section id="sobre-mi">
     <h2>Sobre mí</h2>
     <p>👋 ¡Hola! Soy Alejo Nicolás Peralta Falconi, Analista de Datos – Transformando Información en Ventaja Competitiva con Inteligencia Artificial 🤖.
@@ -228,8 +199,22 @@ Creé scripts en Python que redujeron significativamente tiempos operativos y me
       <li>🛠️ SQL</li>
       <li>📊 Power BI</li>
       <li>📊 Excel</li>
+      <li>📊 Tableau</li>
     </ul>
     <a href="#portada" class="button-back">Volver a la Portada</a>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <ul>
+      <li><a href="https://github.com/APPeralta05/Python_Udemy" class="project-title" target="_blank">🔗 Python Udemy</a></li>
+      <li><a href="https://github.com/APPeralta05/Henry-M2" class="project-title" target="_blank">🔗 Henry M2</a></li>
+      <li><a href="https://github.com/APPeralta05/Henry-M3" class="project-title" target="_blank">🔗 Henry M3</a></li>
+      <li><a href="https://github.com/APPeralta05/Henry-M4" class="project-title" target="_blank">🔗 Henry M4</a></li>
+      <li><a href="https://github.com/APPeralta05/Henry-M1" class="project-title" target="_blank">🔗 Henry M1</a></li>
+      <li><a href="https://github.com/APPeralta05/Codigo_Campeon_Revelando_la_Formula_del_exito_en_la_NBA" class="project-title" target="_blank">🔗 Código Campeón - NBA</a></li>
+      <li><a href="https://github.com/APPeralta05?tab=repositories" class="project-title" target="_blank">🔗 Repositorios Generales</a></li>
+    </ul>
   </section>
 
   <footer>
@@ -237,3 +222,4 @@ Creé scripts en Python que redujeron significativamente tiempos operativos y me
   </footer>
 </body>
 </html>
+chat
