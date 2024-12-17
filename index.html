@@ -147,6 +147,22 @@
       margin-top: 1rem;
     }
 
+    /* Estilo para la foto redonda */
+    .foto-perfil {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .foto-redonda {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
   </style>
 </head>
 <body>
@@ -160,6 +176,11 @@
       <a href="#proyectos" class="button-back">Proyectos</a>
       <a href="#contacto" class="button-back">Contacto</a>
     </header>
+    
+    <!-- Foto redonda debajo del todo -->
+    <div class="foto-perfil">
+      <img src="C:/Users/peral/Desktop/Curriculum/Alejo.jpg" alt="Foto de Alejo" class="foto-redonda">
+    </div>
   </div>
 
   <nav>
@@ -236,3 +257,4 @@ Creé scripts en Python que redujeron significativamente tiempos operativos y me
 
 </body>
 </html>
+
