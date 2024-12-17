@@ -108,24 +108,6 @@
       transform: scale(1.1);
     }
 
-    /* Botón flotante */
-    .button-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #555;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: all 0.3s ease-in-out;
-    }
-    .button-float:hover {
-      background: #bbb;
-      color: #333;
-    }
-
     /* Animaciones */
     @keyframes slideInUp {
       0% { opacity: 0; transform: translateY(50px); }
@@ -135,13 +117,6 @@
       0%, 100% { transform: scale(1); }
       50% { transform: scale(1.05); }
     }
-
-    /* Diseño Responsivo */
-    @media (max-width: 768px) {
-      #portada h1 { font-size: 2rem; }
-      .foto-perfil img { width: 120px; height: 120px; }
-      nav a { display: block; margin: 0.5rem 0; }
-    }
   </style>
 </head>
 <body>
@@ -149,7 +124,7 @@
   <div id="portada">
     <header>
       <h1 class="animate__animated animate__fadeInDown">Alejo Nicolás Peralta Falconi</h1>
-      <p>📊 Análisis de Datos | 🖥️ Excel | 🛠️ SQL | 📈 Power BI | 🐍 Python</p>
+      <p>📊 Análisis de Datos | 🖥️ Excel | 🛠️ SQL | 📈 Power BI | 📊 Tableau | 🐍 Python</p>
       <a href="#sobre-mi" class="button-back">Sobre mí</a>
       <a href="#habilidades" class="button-back">Habilidades</a>
       <a href="#proyectos" class="button-back">Proyectos</a>
@@ -172,40 +147,18 @@
   <!-- Sobre mí -->
   <section id="sobre-mi">
     <h2>Sobre mí</h2>
-    <h3>Mi misión</h3>
-    <p>👋 ¡Hola! Soy Alejo Nicolás Peralta Falconi, Analista de Datos – Transformando Información en Ventaja Competitiva con Inteligencia Artificial 🤖.
-      Mi compromiso es proporcionar insights accionables y diseñar sistemas inteligentes que impulsen el rendimiento y el crecimiento de las empresas.
-      🌟 ¿Qué hago? Ayudo a empresas a aprovechar al máximo su potencial de datos, combinando análisis avanzado con el poder de Machine Learning y herramientas de vanguardia como: 
-      💻 Python, 🛠️ SQL, 📊 Power BI, 📊 Tableau, entre otras. 
-      Mi experiencia incluye la creación de modelos predictivos y la implementación de soluciones personalizadas que: ✅ Optimizan procesos. ✅ Generan predicciones precisas. ✅ Respaldan decisiones estratégicas basadas en evidencia.
-
-💡 Mi compromiso: Proporcionar insights accionables y diseñar sistemas inteligentes que impulsen el rendimiento y el crecimiento de las empresas.
-
-🚀 Proyectos Destacados 🔮 Modelos Predictivos:
-
-Implementé algoritmos de Machine Learning (regresión, clasificación, clustering) para predecir tendencias clave, mejorar estrategias de negocio y optimizar recursos. 📊 Dashboards Estratégicos:
-
-Diseñé tableros interactivos en Power BI que integran datos operativos en tiempo real, respaldando decisiones críticas. 🤖 Automatización de Procesos:
-
-Creé scripts en Python que redujeron significativamente tiempos operativos y mejoraron la eficiencia. ✨ ¿Qué me diferencia? 🌐 Machine Learning Aplicado: Desarrollo modelos para predicción, 
-      clasificación y análisis de datos no estructurados. 
-      📊 Visión Estratégica: Transformo datos complejos en información clara y accionable. 📈 Resultados Medibles: Me enfoco en resolver problemas reales con soluciones basadas en datos e inteligencia artificial.</p>
+    <p>
+      Soy **Alejo Nicolás Peralta Falconi**, Analista de Datos con experiencia en el uso de herramientas como **Python**, **SQL**, **Power BI** y **Tableau** para la transformación de datos en información útil. Me especializo en el desarrollo de modelos predictivos, la automatización de procesos y la creación de dashboards interactivos.
+    </p>
+    <h3>Mi Misión</h3>
+    <p>
+      Mi objetivo es ayudar a empresas a tomar **mejores decisiones** a partir del análisis de datos. Transformo información en estrategias que generan valor y optimizo procesos mediante la automatización.
+    </p>
     <h3>Proyectos Destacados</h3>
     <ul>
-      <li>Implementación de modelos predictivos.</li>
-      <li>Automatización de procesos con Python.</li>
-    </ul>
-  </section>
-
-  <!-- Habilidades -->
-  <section id="habilidades">
-    <h2>Habilidades</h2>
-    <ul>
-      <li>💻 Python</li>
-      <li>🛠️ SQL</li>
-      <li>📊 Power BI</li>
-      <li>📊 Excel</li>
-      <li>📊 Tableau</li>
+      <li>Automatización de reportes con Python.</li>
+      <li>Creación de modelos de predicción para análisis financiero.</li>
+      <li>Desarrollo de dashboards en Power BI y Tableau.</li>
     </ul>
   </section>
 
@@ -213,17 +166,28 @@ Creé scripts en Python que redujeron significativamente tiempos operativos y me
   <section id="proyectos">
     <h2>Proyectos</h2>
     <ul>
-      <li><a href="https://github.com/APPeralta05/Python_Udemy" target="_blank" class="button-back">Python Udemy</a></li>
+      <li>
+        <h3>📊 Dashboard de Ventas con Power BI</h3>
+        <p>Creación de reportes interactivos con datos de ventas para facilitar la toma de decisiones.</p>
+        <a href="https://github.com/APPeralta05/PowerBI_Example" target="_blank" class="button-back">Ver Proyecto</a>
+      </li>
+      <li>
+        <h3>🐍 Automatización de Tareas con Python</h3>
+        <p>Scripts en Python para automatizar tareas repetitivas y optimizar procesos empresariales.</p>
+        <a href="https://github.com/APPeralta05/Python_Automation" target="_blank" class="button-back">Ver Proyecto</a>
+      </li>
     </ul>
   </section>
 
   <!-- Contacto -->
   <section id="contacto">
     <h2>Contacto</h2>
-    <p>📬 <a href="mailto:alejoperaltafal@gmail.com" style="color: white;">alejoperaltafal@gmail.com</a></p>
+    <p>📬 Correo: <a href="mailto:alejoperaltafal@gmail.com" style="color: white;">alejoperaltafal@gmail.com</a></p>
+    <p>📞 Teléfono: +54 9 263-4551572</p>
+    <p>🌎 Ubicación: Mendoza, Argentina</p>
     <div class="social-media">
-      <a href="https://github.com/APPeralta05" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/alejo-peralta-falconi-980762187/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/APPeralta05" target="_blank" class="social-link"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com/in/alejo-peralta-falconi-980762187/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
     </div>
   </section>
 
